@@ -28,9 +28,12 @@ public class ClickToMoveController : MonoBehaviour
     [SerializeField] private float markerLifetime = 1f;
 
     [Header("Анимация (опционально)")]
-    [Tooltip("Aanimator персонажа, если нужно переключать состояние ходьбы")]
+    [Tooltip("Animator персонажа, если нужно переключать состояние ходьбы")]
     [SerializeField] private Animator animator;
-    [SerializeField] private string speedParamName = "Speed";
+    [SerializeField] private string isMovingParamName = "IsMoving";
+
+    [Tooltip("Минимальная скорость, при которой считаем персонажа 'движущимся' для аниматора")]
+    [SerializeField] private float movingVelocityThreshold = 0.05f;
 
     [Header("Стабилизация остановки")]
     [Tooltip("Дистанция до цели, при которой считаем, что агент доехал")]
@@ -142,7 +145,7 @@ public class ClickToMoveController : MonoBehaviour
         if (animator == null)
             return;
 
-        float speed = agent.velocity.magnitude;
-        animator.SetFloat(speedParamName, speed);
+        bool isMoving = agent.velocity.magnitude > movingVelocityThreshold;
+        animator.SetBool(isMovingParamName, isMoving);
     }
 }
