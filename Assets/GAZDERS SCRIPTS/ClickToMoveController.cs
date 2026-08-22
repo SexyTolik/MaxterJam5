@@ -74,6 +74,12 @@ public class ClickToMoveController : MonoBehaviour
         if (!Input.GetMouseButtonDown(0))
             return;
 
+        // Не двигаем персонажа, если сейчас открыт детальный просмотр объекта
+        // (см. ObjectInspectionController) — иначе клик для закрытия просмотра
+        // одновременно отправит персонажа в точку клика
+        if (ObjectInspectionController.IsOpen)
+            return;
+
         // Не двигаем персонажа, если кликнули по UI (кнопка, окно и т.д.)
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
             return;
