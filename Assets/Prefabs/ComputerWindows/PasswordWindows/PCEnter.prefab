@@ -395,7 +395,6 @@ GameObject:
   - component: {fileID: 780371802643272997}
   - component: {fileID: 6632861464414098350}
   - component: {fileID: 3439236274396251716}
-  - component: {fileID: 5472381594399501859}
   - component: {fileID: 4676345249665960346}
   m_Layer: 5
   m_Name: PCEnter
@@ -464,23 +463,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5472381594399501859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3728637370872570178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb8daf636ef79547996e355f33ae12c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ComputerSystem.WindowView
-  _closeButton: {fileID: 8763754052233981053}
-  _id: 0
-  _onJournalOpened:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &4676345249665960346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +475,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fbce1ec5594f73bcb77ec34c5ba21d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComputerSystem.PasswordChecker
+  _closeButton: {fileID: 8763754052233981053}
+  _id: 0
+  _onJournalOpened:
+    m_PersistentCalls:
+      m_Calls: []
   _passwords:
   - 1889
   _passwordInput: {fileID: 4742839842874009699}
@@ -1024,8 +1011,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -38.416687, y: 0}
+  m_SizeDelta: {x: -76.8334, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1601262499138956833
 CanvasRenderer:

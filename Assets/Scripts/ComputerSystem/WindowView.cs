@@ -14,16 +14,16 @@ namespace ComputerSystem
         [SerializeField] private int _id;
         [SerializeField] private UnityEvent<int> _onJournalOpened;
         
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             _closeButton.onClick.AddListener(Hide);
         }
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             _closeButton.onClick.RemoveListener(Hide);
         }
 
-        public void Show()
+        public virtual void Show()
         {
             if(gameObject.activeSelf) return;
             

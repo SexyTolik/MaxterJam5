@@ -12,12 +12,12 @@ namespace ComputerSystem
         protected override void OnEnable()
         {
             base.OnEnable();
-            _windowView.OnClosed += OnWindowClosedHandle;
+            _window.OnClosed += OnWindowClosedHandle;
         }
         protected override void OnDisable()
         {
             base.OnDisable();
-            _windowView.OnClosed -= OnWindowClosedHandle;
+            _window.OnClosed -= OnWindowClosedHandle;
         }
 
         private void OnWindowClosedHandle(WindowView window)
