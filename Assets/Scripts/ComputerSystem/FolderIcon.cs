@@ -5,9 +5,9 @@ namespace ComputerSystem
 {
     public class FolderIcon : ComputerIcon
     {
-        public List<ComputerIcon> Icons => _icons;
+        public List<ComputerIcon> Files => _files;
         
-        [SerializeField] private List<ComputerIcon> _icons = new();
+        [SerializeField] private List<ComputerIcon> _files = new();
 
         protected override void OnEnable()
         {
@@ -22,7 +22,7 @@ namespace ComputerSystem
 
         private void OnWindowClosedHandle(WindowView window)
         {
-            foreach (var icon in _icons)
+            foreach (var icon in _files)
             {
                 icon.Window.Hide();
             }

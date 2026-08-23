@@ -38,6 +38,8 @@ namespace PasswordSystem
         
         private void CheckPassword(string input)
         {
+            input = input.ToUpper();
+            
             foreach (var password in _passwords)
             {
                 if (input == password)

@@ -70,7 +70,7 @@ namespace ComputerSystem
             {
                 if (icon is FolderIcon folderIcon)
                 {
-                    AddIcons(folderIcon.Icons);
+                    AddIcons(folderIcon.Files);
                 }
             }
         }
