@@ -33,6 +33,18 @@ public class JournalUIController : MonoBehaviour
         }
     }
 
+    public void ResiveZarisovkaEvent(int rebusID)
+    {
+        foreach(var v in JournalLists)
+        {
+            JournalPage _page = v.GetComponent<JournalPage>();
+            if(_page.PageID == rebusID)
+            {
+                _page.ShowHint();
+            }
+        }
+    }
+
     public void NextPage()
     {
        int curindx = JournalLists.IndexOf(currentJournal);
