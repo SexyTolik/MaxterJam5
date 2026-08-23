@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace ComputerSystem
@@ -10,6 +11,8 @@ namespace ComputerSystem
         public event Action<WindowView> OnOpened;
         
         [SerializeField] private Button _closeButton;
+        [SerializeField] private int _id;
+        [SerializeField] private UnityEvent<int> _onJournalOpened;
         
         private void OnEnable()
         {
@@ -26,6 +29,7 @@ namespace ComputerSystem
             
             gameObject.SetActive(true);
             OnOpened?.Invoke(this);
+            _onJournalOpened?.Invoke(_id);
         }
         public void Hide()
         {

@@ -1,14 +1,15 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace ComputerSystem
+namespace PasswordSystem
 {
     public class PasswordChecker : MonoBehaviour
     {
         public event Action OnSuccess;
         
-        [SerializeField] private string _password;
+        [SerializeField] private List<string> _passwords = new ();
         [SerializeField] private TMP_InputField _passwordInput;
 
         private void OnEnable()
@@ -22,7 +23,14 @@ namespace ComputerSystem
 
         private void CheckPassword(string input)
         {
-            if(_password ==  input) OnSuccess?.Invoke();
+            foreach (var password in _passwords)
+            {
+                if (input == password)
+                {
+                    OnSuccess?.Invoke();
+                    return;
+                }
+            }
         }
     }
 }
