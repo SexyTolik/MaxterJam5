@@ -28,7 +28,16 @@ public class JournalUIController : MonoBehaviour
             JournalPage _page = v.GetComponent<JournalPage>();
             if(_page.PageID == rebusID)
             {
-                _page.ShowHint();
+                if (_page.isActiveAndEnabled)
+                {
+                    _page.ShowHint();
+                }
+                else
+                {
+                    v.SetActive(true);
+                    _page.ShowHint();
+                    v.SetActive(false);
+                }
             }
         }
     }
@@ -40,7 +49,16 @@ public class JournalUIController : MonoBehaviour
             JournalPage _page = v.GetComponent<JournalPage>();
             if(_page.PageID == rebusID)
             {
-                _page.ShowHint();
+                if (_page.isActiveAndEnabled)
+                {
+                    _page.ShowZarisovka();
+                }
+                else
+                {
+                    v.SetActive(true);
+                    _page.ShowZarisovka();
+                    v.SetActive(false);
+                }
             }
         }
     }

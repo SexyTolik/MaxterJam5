@@ -1052,30 +1052,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4676345249665960346, guid: e2184236097d47d469aa70902a2cbd42, type: 3}
-      propertyPath: _id
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676345249665960346, guid: e2184236097d47d469aa70902a2cbd42, type: 3}
-      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676345249665960346, guid: e2184236097d47d469aa70902a2cbd42, type: 3}
-      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676345249665960346, guid: e2184236097d47d469aa70902a2cbd42, type: 3}
-      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResiveHintEvent
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676345249665960346, guid: e2184236097d47d469aa70902a2cbd42, type: 3}
-      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: JournalUIController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676345249665960346, guid: e2184236097d47d469aa70902a2cbd42, type: 3}
-      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
