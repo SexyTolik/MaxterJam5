@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5034500710909363471
+--- !u!1001 &8782636978446547760
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,13 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4449529594554927754, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
-      propertyPath: m_text
-      value: My pride
+    - target: {fileID: 3349128895086049996, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
+      propertyPath: PageID
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4449529594554927754, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
-      propertyPath: m_fontSize
-      value: 72
+      propertyPath: m_text
+      value: the day she said yes
       objectReference: {fileID: 0}
     - target: {fileID: 5211769799003875205, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_Pivot.x
@@ -78,11 +78,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5211769799003875205, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -2.2438354
       objectReference: {fileID: 0}
     - target: {fileID: 5211769799003875205, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 13.337952
       objectReference: {fileID: 0}
     - target: {fileID: 5211769799003875205, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -96,13 +96,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7007252505589842816, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 85e04c0e523433840967ce781d9c2c2b, type: 3}
     - target: {fileID: 8807713761918330685, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_Name
-      value: MoreJournal Variant
+      value: PersonalJournal Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
