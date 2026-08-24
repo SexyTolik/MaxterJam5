@@ -7,6 +7,7 @@ public class SoundFXManager : MonoBehaviour
    [SerializeField] private AudioSource soundFXPrefab;
 
    public AudioClip passSound;
+   public AudioClip click;
 
     void Awake()
     {
@@ -44,5 +45,10 @@ public class SoundFXManager : MonoBehaviour
         source.Play();
         float clipLenght = audioClip.length;
         Destroy(source.gameObject,clipLenght);
+    }
+
+    public void PlayClikSound()
+    {
+        PlayAudioClip(click);
     }
 }

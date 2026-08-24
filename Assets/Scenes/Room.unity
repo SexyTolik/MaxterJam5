@@ -7020,6 +7020,7 @@ GameObject:
   - component: {fileID: 1838719539}
   - component: {fileID: 1838719542}
   - component: {fileID: 1838719543}
+  - component: {fileID: 1838719544}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -7062,7 +7063,7 @@ Camera:
   far clip plane: 99999.99
   field of view: 26.991467
   orthographic: 1
-  orthographic size: 7.69
+  orthographic size: 0.5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -7187,6 +7188,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838719537}
   m_Enabled: 1
+--- !u!114 &1838719544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838719537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77b981fe7139e84199d56ac6285c53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstCutScene
+  MainCamera: {fileID: 1838719538}
+  targetSize: 7.69
 --- !u!1 &1848851136
 GameObject:
   m_ObjectHideFlags: 0
@@ -8011,7 +8026,7 @@ Transform:
   m_GameObject: {fileID: 1944943619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7933532, z: -0, w: 0.6087617}
-  m_LocalPosition: {x: -2.11, y: 0.92, z: 0.08}
+  m_LocalPosition: {x: 7.3297606, y: 0.92, z: -2.3081908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
