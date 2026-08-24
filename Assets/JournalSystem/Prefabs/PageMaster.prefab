@@ -479,3 +479,4 @@ MonoBehaviour:
   PageID: -1
   Hint: {fileID: 1206887070509095798}
   Zarisovka: {fileID: 4678960579033930036}
+  ZarisovkaSound: {fileID: 8300000, guid: f736cd8df428b4046a867c49aa5fd1da, type: 3}

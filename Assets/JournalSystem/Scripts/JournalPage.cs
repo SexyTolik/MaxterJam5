@@ -1,3 +1,4 @@
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class JournalPage : MonoBehaviour
@@ -7,6 +8,9 @@ public class JournalPage : MonoBehaviour
     private GameObject Hint;
     [SerializeField]
     private GameObject Zarisovka;
+
+    public AudioClip ZarisovkaSound;
+    private bool ZarisovkaISComplete = false;
 
     void Awake()
     {
@@ -21,6 +25,11 @@ public class JournalPage : MonoBehaviour
 
     public void ShowZarisovka()
     {
-        Zarisovka.SetActive(true);
+        if (!ZarisovkaISComplete)
+        {
+         ZarisovkaISComplete = true;
+         Zarisovka.SetActive(true);
+         SoundFXManager.instance.PlayAudioClip(ZarisovkaSound);
+        }
     }
 }

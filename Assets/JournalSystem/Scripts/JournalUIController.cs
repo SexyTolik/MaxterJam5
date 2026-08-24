@@ -45,6 +45,10 @@ public class JournalUIController : MonoBehaviour
 
     public void ResiveZarisovkaEvent(int rebusID)
     {
+        if(!PCUnloked && rebusID > 0)
+        {
+            return;
+        }
         foreach(var v in JournalLists)
         {
             JournalPage _page = v.GetComponent<JournalPage>();

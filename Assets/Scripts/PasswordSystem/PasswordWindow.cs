@@ -48,6 +48,7 @@ namespace PasswordSystem
                 {
                     _passwordEntered =  true;
                     OnSuccess?.Invoke();
+                    SoundFXManager.instance.PlayAudioClip(SoundFXManager.instance.passSound);
                     return;
                 }
             }
