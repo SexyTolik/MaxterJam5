@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 24
     m_Right: 24
-    m_Top: 48
-    m_Bottom: 48
+    m_Top: 55
+    m_Bottom: 55
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
