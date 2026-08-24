@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: efaad61449ae20c4e80ca075259949ce
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - walkSFX1: {fileID: 8300000, guid: 1fd3a4846900d1b44a5b0eaaf4dfd065, type: 3}
+  - walkSFX2: {fileID: 8300000, guid: 960dcb27257eb3c4782f332f6a33044d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

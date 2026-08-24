@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -51,6 +52,13 @@ public class ObjectInspectionController : MonoBehaviour
     [Tooltip("Скорость авто-вращения, градусов в секунду")]
     [SerializeField] private float autoRotateSpeed = 25f;
 
+    [Tooltip("Игрок и минимальное растояние до объекта вращения")]
+    [SerializeField] private ClickToMoveController Player;
+    [SerializeField] private float MinDistance = 4f;
+
+    [Tooltip("Текст описание предмета который осматриваем")]
+    [SerializeField] private TMP_Text text;
+
     /// <summary>
     /// Открыт ли сейчас детальный просмотр. Используется другими скриптами
     /// (например, ClickToMoveController), чтобы не двигать персонажа, пока открыт просмотр.
@@ -70,6 +78,7 @@ public class ObjectInspectionController : MonoBehaviour
             darkenPanel.alpha = 0f;
             darkenPanel.blocksRaycasts = false;
             darkenPanel.interactable = false;
+            text.gameObject.SetActive(false);
         }
         else
         {
@@ -108,10 +117,15 @@ public class ObjectInspectionController : MonoBehaviour
             return;
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-
+        
         if (Physics.Raycast(ray, out RaycastHit hit, rayDistance, inspectableLayer))
         {
             InspectableObject inspectable = hit.collider.GetComponentInParent<InspectableObject>();
+            if(Vector3.Distance(inspectable.transform.position, Player.transform.position) > MinDistance)
+            {
+                Player.MoveTo(inspectable.transform.position);
+                return;
+            }
 
             if (inspectable != null)
             {
@@ -141,6 +155,8 @@ public class ObjectInspectionController : MonoBehaviour
 
         SpawnDetailInstance(inspectable);
         AnimateDarken(show: true);
+        text.gameObject.SetActive(true);
+        text.text = inspectable.Opisanie;
     }
 
     private void SpawnDetailInstance(InspectableObject inspectable)
@@ -196,6 +212,7 @@ public class ObjectInspectionController : MonoBehaviour
         }
 
         AnimateDarken(show: false);
+        text.gameObject.SetActive(false);
     }
 
     private void AnimateDarken(bool show)

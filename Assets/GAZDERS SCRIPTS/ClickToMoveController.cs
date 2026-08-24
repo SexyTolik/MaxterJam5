@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using UnityEngine.Audio;
+using System;
 
 /// <summary>
 /// Контроллер перемещения персонажа по клику мыши в 3D.
@@ -95,7 +97,7 @@ public class ClickToMoveController : MonoBehaviour
         }
     }
 
-    private void MoveTo(Vector3 targetPoint)
+    public void MoveTo(Vector3 targetPoint)
     {
         // Проверяем, что точка лежит на NavMesh (или рядом с ним)
         if (NavMesh.SamplePosition(targetPoint, out NavMeshHit navHit, 2f, NavMesh.AllAreas))
@@ -148,4 +150,5 @@ public class ClickToMoveController : MonoBehaviour
         bool isMoving = agent.velocity.magnitude > movingVelocityThreshold;
         animator.SetBool(isMovingParamName, isMoving);
     }
+
 }

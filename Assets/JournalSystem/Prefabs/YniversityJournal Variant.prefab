@@ -99,7 +99,7 @@ PrefabInstance:
     - target: {fileID: 7007252505589842816, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 938d1cf11d7d03f4fbd9242e75185416, type: 3}
+      objectReference: {fileID: 21300000, guid: f59802cd280f26542ba3f22d03268491, type: 3}
     - target: {fileID: 7554404389888358722, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_text
       value: University Folder

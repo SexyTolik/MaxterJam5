@@ -115,7 +115,7 @@ PrefabInstance:
     - target: {fileID: 7007252505589842816, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1b6127f60f6d4a64a80b1ab042e7e77c, type: 3}
+      objectReference: {fileID: 21300000, guid: df7b9985d10bda740b26408ef91c7a05, type: 3}
     - target: {fileID: 7554404389888358722, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_text
       value: Unlock PC

@@ -5,6 +5,7 @@ public class JournalUIController : MonoBehaviour
 {
     public List<GameObject> JournalLists = new List<GameObject>();
     [SerializeField] private GameObject currentJournal;
+    public bool PCUnloked = false;
 
 
     void Awake()
@@ -65,6 +66,10 @@ public class JournalUIController : MonoBehaviour
 
     public void NextPage()
     {
+        if (!PCUnloked)
+        {
+            return;
+        }
        int curindx = JournalLists.IndexOf(currentJournal);
        currentJournal.SetActive(false);
        curindx++;
@@ -74,6 +79,10 @@ public class JournalUIController : MonoBehaviour
     }
     public void PreciousPage()
     {
+        if (!PCUnloked)
+        {
+            return;
+        }
        int curindx = JournalLists.IndexOf(currentJournal);
        currentJournal.SetActive(false);
        curindx--;

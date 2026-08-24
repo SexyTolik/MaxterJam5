@@ -9,6 +9,8 @@ namespace ComputerSystem
         [SerializeField] private PasswordWindow _passwordWindow;
         [SerializeField] private Button _closeButton;
 
+        public JournalUIController journal;
+
         private void OnEnable()
         {
             _passwordWindow.OnSuccess += OnPasswordEnteredHandle;
@@ -34,8 +36,12 @@ namespace ComputerSystem
         private void OnPasswordEnteredHandle()
         {
             _passwordWindow.Hide();
+            if(journal != null)
+            {
+                journal.PCUnloked = true;
+            }
         }
-        
+
         /*private void AddIcons(List<ComputerIcon> icons)
         {
             foreach (var icon in icons)

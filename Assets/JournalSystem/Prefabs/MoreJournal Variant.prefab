@@ -103,7 +103,7 @@ PrefabInstance:
     - target: {fileID: 7007252505589842816, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 85e04c0e523433840967ce781d9c2c2b, type: 3}
+      objectReference: {fileID: 21300000, guid: 9afa044efdf8d29489c9a38d1b23c581, type: 3}
     - target: {fileID: 7554404389888358722, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_text
       value: Vacation folder

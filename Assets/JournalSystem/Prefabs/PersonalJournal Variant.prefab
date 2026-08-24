@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7007252505589842816, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a041480984be8c743b8d474c1ef82645, type: 3}
     - target: {fileID: 7554404389888358722, guid: 0072ae772865b244c9247ffb47f7a825, type: 3}
       propertyPath: m_text
       value: Beloved folder

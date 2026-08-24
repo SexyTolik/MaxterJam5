@@ -17,4 +17,6 @@ public class InspectableObject : MonoBehaviour
 
     public GameObject DetailPrefab => detailPrefab;
     public Vector3 DetailScale => detailScale;
+
+    public string Opisanie;
 }
