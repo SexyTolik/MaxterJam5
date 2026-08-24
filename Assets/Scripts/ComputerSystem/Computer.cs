@@ -1,4 +1,6 @@
+using System;
 using InteractSystem;
+using PasswordSystem;
 using UnityEngine;
 
 namespace ComputerSystem
@@ -6,7 +8,12 @@ namespace ComputerSystem
     public class Computer : MonoBehaviour, IInteractable
     {
         [SerializeField] private ComputerView _view;
-        
-        public void Interact() => _view.Show();
+
+
+        public void Interact()
+        {
+            _view.Show();
+          
+        }
     }
 }

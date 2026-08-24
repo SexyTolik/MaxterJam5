@@ -297,10 +297,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1498457559}
     m_Modifications:
     - target: {fileID: 2820313018896510442, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
-      propertyPath: _id
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2820313018896510442, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
@@ -311,6 +307,10 @@ PrefabInstance:
     - target: {fileID: 2820313018896510442, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResiveHintEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
+      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -425,16 +425,16 @@ PrefabInstance:
       value: ResiveHintEvent
       objectReference: {fileID: 0}
     - target: {fileID: 8389552833651732478, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
+      propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389552833651732478, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 110570703}
     - target: {fileID: 8389552833651732478, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResiveHintEvent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904872232150728902, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
-      propertyPath: _id
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8904872232150728902, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3233,6 +3233,10 @@ PrefabInstance:
     - target: {fileID: 5613931402161925404, guid: 76f3098826ff37a4d981b2b7b2f890e3, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019701785730318825, guid: 76f3098826ff37a4d981b2b7b2f890e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -8,6 +8,8 @@ namespace PasswordSystem
 {
     public class PasswordWindow : WindowView
     {
+        public bool IsEntered => _passwordEntered;
+        
         public event Action OnSuccess;
         
         [SerializeField] private List<string> _passwords = new ();

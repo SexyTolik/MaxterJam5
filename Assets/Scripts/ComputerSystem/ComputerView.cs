@@ -1,63 +1,42 @@
-using System.Collections.Generic;
+using PasswordSystem;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ComputerSystem
 {
     public class ComputerView : MonoBehaviour
     {
-        [SerializeField] private List<ComputerIcon> _icons = new();
-        private HashSet<ComputerIcon> _iconSet = new();
-
-        [SerializeField] private bool _isEscapeWorks;
-        
-        private List<WindowView> _openedWindows = new ();
-        
-        private void Awake()
-        {
-            AddIcons(_icons);
-        }
+        [SerializeField] private PasswordWindow _passwordWindow;
+        [SerializeField] private Button _closeButton;
 
         private void OnEnable()
         {
-            foreach (var icon in _iconSet)
-            {
-                icon.Window.OnOpened += OnWindowOpenedHandle;
-            }
+            _passwordWindow.OnSuccess += OnPasswordEnteredHandle;
+            _closeButton.onClick.AddListener(Hide);
         }
         private void OnDisable()
         {
-            foreach (var icon in _iconSet)
-            {
-                icon.Window.OnOpened -= OnWindowOpenedHandle;
-            }
-        }
-        
-        private void OnWindowOpenedHandle(WindowView window)
-        {
-            _openedWindows.Add(window);
+            _passwordWindow.OnSuccess -= OnPasswordEnteredHandle;
+            _closeButton.onClick.RemoveListener(Hide);
         }
 
         public void Show()
         {
+            _passwordWindow.Show();
             gameObject.SetActive(true);
         }
-        public void Hide()
+        private void Hide()
         {
+            _passwordWindow.Hide();
             gameObject.SetActive(false);
         }
-
-        public void Update()
+        
+        private void OnPasswordEnteredHandle()
         {
-            if(!_isEscapeWorks) return;
-            if(_openedWindows.Count <= 0) return;
-            
-            /*if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                _openedWindows[^0].Hide();
-            }*/
+            _passwordWindow.Hide();
         }
-
-        private void AddIcons(List<ComputerIcon> icons)
+        
+        /*private void AddIcons(List<ComputerIcon> icons)
         {
             foreach (var icon in icons)
             {
@@ -73,6 +52,6 @@ namespace ComputerSystem
                     AddIcons(folderIcon.Files);
                 }
             }
-        }
+        }*/
     }
 }
