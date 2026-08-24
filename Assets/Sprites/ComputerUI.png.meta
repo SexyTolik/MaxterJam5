@@ -223,10 +223,10 @@ TextureImporter:
       name: ComputerUI_5
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1020
-        width: 45
-        height: 45
+        x: 6
+        y: 1030
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,10 +245,10 @@ TextureImporter:
       name: ComputerUI_6
       rect:
         serializedVersion: 2
-        x: 56
-        y: 1023
-        width: 32
-        height: 32
+        x: 55
+        y: 1027
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,6 +501,50 @@ TextureImporter:
       bones: []
       spriteID: 08d78c627da46f44c8f98d39da52d27e
       internalID: -706438969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 980
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d356fc00dd059d45b392068e29bc7d7
+      internalID: -1478216058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 980
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc97afef85fd14c4da63947df6cddbae
+      internalID: -1703541244
       vertices: []
       indices: 
       edges: []
