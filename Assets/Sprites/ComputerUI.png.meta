@@ -514,7 +514,7 @@ TextureImporter:
         width: 13
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -536,7 +536,7 @@ TextureImporter:
         width: 13
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -545,6 +545,160 @@ TextureImporter:
       bones: []
       spriteID: dc97afef85fd14c4da63947df6cddbae
       internalID: -1703541244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 980
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e21681c79688264793550e18b50837e
+      internalID: -1373482226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 980
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c208b83e25672c4d918348bdce28891
+      internalID: 1638528114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_22
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 980
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ed3d9b45976174191ae7d0872f50eb
+      internalID: -1980745548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 979
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb24bacd80eebb4e861effe02650dc8
+      internalID: -48829941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 979
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76724258e72422844a6ead4ca8e02f12
+      internalID: -2074168597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_25
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 979
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecd1bc01a1f7a6419ccbf7f9c8e6a92
+      internalID: -1664703442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerUI_26
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 979
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1280695e32fb7404c8774d5395a2a66a
+      internalID: 1519613355
       vertices: []
       indices: 
       edges: []
@@ -581,6 +735,10 @@ TextureImporter:
       ComputerUI_20: -1507459693
       ComputerUI_21: 439343755
       ComputerUI_22: -1980745548
+      ComputerUI_23: -48829941
+      ComputerUI_24: -2074168597
+      ComputerUI_25: -1664703442
+      ComputerUI_26: 1519613355
       ComputerUI_3: 100759332
       ComputerUI_4: 510187653
       ComputerUI_5: 2129929181
