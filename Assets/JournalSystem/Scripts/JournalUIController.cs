@@ -7,6 +7,8 @@ public class JournalUIController : MonoBehaviour
     [SerializeField] private GameObject currentJournal;
     public bool PCUnloked = false;
 
+    public UIAnims anims;
+
 
     void Awake()
     {
@@ -54,6 +56,10 @@ public class JournalUIController : MonoBehaviour
             JournalPage _page = v.GetComponent<JournalPage>();
             if(_page.PageID == rebusID)
             {
+                if (_page.ZarisovkaISComplete)
+                {
+                    return;
+                }
                 if (_page.isActiveAndEnabled)
                 {
                     _page.ShowZarisovka();
@@ -64,6 +70,7 @@ public class JournalUIController : MonoBehaviour
                     _page.ShowZarisovka();
                     v.SetActive(false);
                 }
+                anims.MarkJournal();
             }
         }
     }

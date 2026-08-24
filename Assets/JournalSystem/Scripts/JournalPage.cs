@@ -10,7 +10,7 @@ public class JournalPage : MonoBehaviour
     private GameObject Zarisovka;
 
     public AudioClip ZarisovkaSound;
-    private bool ZarisovkaISComplete = false;
+    public bool ZarisovkaISComplete = false;
 
     void Awake()
     {
