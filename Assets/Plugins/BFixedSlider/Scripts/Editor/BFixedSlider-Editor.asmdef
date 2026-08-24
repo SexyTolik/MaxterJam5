@@ -1,0 +1,10 @@
+{
+  "name": "BFixedSlider-Editor",
+  "references": [
+    "BFixedSlider"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}
