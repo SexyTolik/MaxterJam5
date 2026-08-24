@@ -911,7 +911,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.55
+  m_Intensity: 25
   m_Range: 2.2592819
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -954,7 +954,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 11930
+  m_ColorTemperature: 19976
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -12791,6 +12791,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5032732550523289859, guid: e65c8bcaaab750449ac7637bf24ce765, type: 3}
+      propertyPath: detailPrefab
+      value: 
+      objectReference: {fileID: 2592825880809423069, guid: 528a3db946bcf3d449903456e3a8b624, type: 3}
     - target: {fileID: 7597636686129029225, guid: e65c8bcaaab750449ac7637bf24ce765, type: 3}
       propertyPath: m_Name
       value: NotesRoot
