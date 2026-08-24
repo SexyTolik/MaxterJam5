@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Button _playButton;
     [SerializeField] private Button _quitButton;
+    public GameObject LoadScreen;
 
     private void OnEnable()
     {
@@ -22,6 +23,7 @@ public class MainMenu : MonoBehaviour
 
     private void StartGame()
     {
+        LoadScreen.SetActive(true);
         SceneManager.LoadScene("Room");
     }
 
