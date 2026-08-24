@@ -16,13 +16,13 @@ MonoBehaviour:
   settings:
     renderPassEvent: 600
     material: {fileID: 2100000, guid: 1d5547f1bf162e74f9c551214938497a, type: 2}
-    curvature: 8.17
-    scanlineIntensity: 0.541
-    scanlineCount: 341
-    vignetteIntensity: 0.26
-    chromaticAberration: 0.00384
-    noiseIntensity: 0
-    brightness: 1.843
+    curvature: 9.92
+    scanlineIntensity: 0.694
+    scanlineCount: 141
+    vignetteIntensity: 0.43
+    chromaticAberration: 0.00253
+    noiseIntensity: 0.018
+    brightness: 2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
