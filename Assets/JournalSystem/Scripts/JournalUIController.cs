@@ -6,6 +6,7 @@ public class JournalUIController : MonoBehaviour
     public List<GameObject> JournalLists = new List<GameObject>();
     [SerializeField] private GameObject currentJournal;
     public bool PCUnloked = false;
+    public GameObject LABELNEW;
 
     public UIAnims anims;
 
@@ -71,6 +72,7 @@ public class JournalUIController : MonoBehaviour
                     v.SetActive(false);
                 }
                 anims.MarkJournal();
+                LABELNEW.SetActive(true);
             }
         }
     }
