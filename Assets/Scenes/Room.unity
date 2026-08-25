@@ -2311,7 +2311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _passwords.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: '_passwords.Array.data[1]'
@@ -2320,6 +2320,10 @@ PrefabInstance:
     - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: '_passwords.Array.data[2]'
       value: 03.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
+      propertyPath: '_passwords.Array.data[3]'
+      value: 0317
       objectReference: {fileID: 0}
     - target: {fileID: 4855522955699176958, guid: 227aca52ef91d0b45add9028b90f022a, type: 3}
       propertyPath: _onJournalOpened.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
